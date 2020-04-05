@@ -1,0 +1,51 @@
+/* Component/navi.wxss */
+/* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+
+ .nav-wrap {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  color: #000;
+  z-index: 9999999;
+  /*  */
+  /* box-shadow: 1rpx 1rpx 15rpx 1rpx #dadada; */
+  
+} 
+.nav-icon{
+  display: inline-flex;
+  justify-content: flex-start;
+  position: absolute;
+  
+}
+.left-icon,.right-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-icon{
+  margin-left: 15rpx;
+}
+.right-icon{
+  position: relative;
+  left: 20%;
+}
+
+
+
+.search-box{
+  display: inline-flex;
+ background-color: #fafafa;
+ margin-left: 10px;
+}
+.search-icon{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.clink-my{
+  position: absolute;
+  background-color:rgba(0,0,0,0.2);
+}

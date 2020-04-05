@@ -1,0 +1,6 @@
+<!--pages/detail/detail.wxml-->
+<nav-bar id="my" navbar-data='{{nvabarData}}'></nav-bar>
+
+<view class="page" style="margin-top:{{height}}px;">
+<image mode="" class="show_img"  src="https://a.vpimg3.com/upload/merchandise/pdcvis/616782/2019/1118/153/f0ac17c2-9eb4-4434-80ea-f693ced70ae5_64x64_90.jpg"></image>
+</view>

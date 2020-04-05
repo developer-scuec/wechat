@@ -1,0 +1,14 @@
+<!--pages/cart/cart.wxml-->
+<nav-bar id="my" navbar-data='{{nvabarData}}'></nav-bar>
+
+<view style="top:{{height}}px;"  class="empty">
+  <view class="empty_word">
+    <view class="word">Your Basket is empty</view>
+    <view class="back_box" bindtap="_back">
+      <view class="back_button">Continue Shopping</view>
+    </view>
+  </view>
+  <view class="empty_icon">
+    <image class="empty_cart_logo" src="/pages/images/empty_cart_logo.png"  mode="aspectFit"></image>
+  </view>
+</view>

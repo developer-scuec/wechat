@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<nav-bar id="nav" navbar-data='{{nvabarData}}'></nav-bar>
+
+<view id="show" class="show_index" style="margin-top:{{height}}px;">
+  <component-tag-name id="show"></component-tag-name>
+</view>
+
+<view wx:if="{{show_my==true}}" bindtap="hidde" class="cart-box">
+  
+</view>
+<view wx:if="{{show_my==true}}" class="cart" style="top:{{height}}px;">
+  <view class="title">Guest</view>
+  <view class="login_button">
+      <view class="login_icon">
+        <image  class="login_img" src="/Component/img/google.png"></image>
+      </view>
+      <view class="login_text">Sign in with wechat</view>
+  </view>
+  <view class="item_button">
+      <view class="item_icon">
+        <image mode="aspectFit" class="item_img" src="/pages/images/orders4.png"></image>
+      </view>
+      <view class="item_text">Orders</view>
+  </view>
+  <view class="item_button">
+      <view class="item_icon">
+        <image mode="aspectFit" class="item_img" src="/pages/images/love3.png"></image>
+      </view>
+      <view class="item_text">My Love</view>
+  </view>
+  <view class="item_button">
+      <view class="item_icon">
+        <image mode="aspectFit" class="item_img" src="/pages/images/history2.png"></image>
+      </view>
+      <view class="item_text">History</view>
+  </view>
+  <view class="item_button">
+      <view class="item_icon">
+        <image mode="aspectFit" class="item_img" src="/pages/images/setting.png"></image>
+      </view>
+      <view class="item_text">Setting</view>
+  </view>
+</view>
+<view wx:if="{{list==true}}" class="show_list">
+  <view class="list_items"  style="margin-top:{{height}}px;">
+    <view class="list_item">
+      <navigator class="list_item1" url="/pages/phone/phone">
+        <image class="list_item_image" mode="aspectFit" src="/pages/images/phone.jpg"></image>
+        <view class="list_item_word">Phones</view>
+      </navigator>
+
+      <view class="list_item1">
+        <image class="list_item_image" mode="aspectFit" src="/pages/images/computer.jpg"></image>
+        <view class="list_item_word">Laptops</view>
+      </view>
+    </view>
+
+    <view class="list_item">
+      <view class="list_item1">
+        <image class="list_item_image" mode="aspectFit" src="/pages/images/Audio.jpg"></image>
+        <view class="list_item_word">Audio</view>
+      </view>
+
+      <view class="list_item1">
+        <image class="list_item_image" mode="aspectFit" src="/pages/images/pad.jpg"></image>
+        <view class="list_item_word">Tablets</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav-bar":"/Component/navi",
+    "component-tag-name": "/Component/IndexComponent/IndexComponent"
+
+  }
+}

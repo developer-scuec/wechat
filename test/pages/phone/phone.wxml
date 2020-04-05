@@ -1,0 +1,11 @@
+<!--pages/phone/phone.wxml-->
+<nav-bar id="my" navbar-data='{{nvabarData}}'></nav-bar>
+<view class="box" style="margin-top:{{height}}px;">
+  <navigator class="items" url="/pages/detail/detail">
+    <view class="image-item">
+      <image class="image" mode="aspectFit" src="/pages/images/phone.jpg"></image>
+    </view>
+    <view class="word-item">Powerbeats pr - 完全无线耳机-丛林绿</view>
+    <view class="price-item">RMB 1,888</view>
+  </navigator>
+</view>

@@ -1,0 +1,54 @@
+/* pages/cart/cart.wxss */
+.empty{
+  width: 100%;
+  height: 60%;
+  position: fixed;
+  background-color: #fafafa;
+
+}
+.empty_word{
+  width: 100%;
+  height: 300rpx;
+  font-size: 55rpx;
+  color: #828286;
+  font-family: Google Sans;
+  margin-top: 100rpx;
+}
+.word{
+  width: 100%;
+  height: 100rpx;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.back_box{
+  width: 100%;
+  height: 100rpx;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.back_button{
+  width: 50%;
+  height: 60rpx;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  border: 2.5px solid #e1e1e1;
+  border-radius: 5px 5px 5px;
+}
+.empty_icon{
+  width: 100%;
+  height: 400rpx;
+  display: inline-flex;
+  justify-content:center;
+  align-items: center;
+
+
+}
+.empty_cart_logo{
+  height: 100%;
+}

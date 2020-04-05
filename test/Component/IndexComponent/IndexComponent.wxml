@@ -1,0 +1,29 @@
+<view class="items">
+  <view class="container_item iphone" style="background-color:black; color:white;">
+    <view class="c_item_word" style="color:white;">
+      <view class="word1">iphone11 pro</view>
+      <view class="word2">摄像头、显示屏，样样 pro 如其名</view>
+      <view class="back_box" bindtap="_back"  style="color:white;">
+        <view class="back_button">lean more</view>
+      </view>
+    </view>
+    <view class="c_item_img">
+      <image class="c_iem_image" mode="aspectFit" src="/pages/images/iphone.jpg"></image>
+    </view>
+  </view>
+
+  <view class="container_item">
+    <view class="c_item_word">
+      <view class="word1">ipad pro</view>
+      <view class="word2">全新，全面屏，全方位强大</view>
+      <view class="back_box" bindtap="_back">
+        <view class="back_button">lean more</view>
+      </view>
+    </view>
+    <view class="c_item_img">
+      <image class="c_iem_image" mode="aspectFit" src="/pages/images/ipad.jpg"></image>
+    </view>
+  </view>
+
+  
+</view>

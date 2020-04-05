@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "nav-bar": "/Component/navi_cart/navi_cart"
+  }
+}

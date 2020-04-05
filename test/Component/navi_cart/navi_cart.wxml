@@ -1,0 +1,24 @@
+<view class='nav-wrap' style='height: {{height}}px;'>
+  <view wx:if="{{search==false}}" class="nav-icon" style="width:100%;height:{{navBarHeight+gap*2}}px;margin-top:{{statuHeight}}px;background-color:{{backgroundColor}};">
+    <view class="left-icon" style="width:25%;height:100%;">
+      <image wx:if="{{list==false}}" bindtap="_back" class="icon" src="/Component/img/back.png" mode="aspectFit" style="height:{{navBarHeight/1.5}}px;"/>
+      <image wx:if="{{list==true}}" bindtap="_list" class="icon" src="/Component/img/cancle.png" mode="aspectFit" style="height:{{navBarHeight/1.5}}px;"/>
+      <image class="icon" src="/Component/img/google.png" mode="aspectFit" style="height:{{navBarHeight/1.3}}px;"/>
+    </view>
+    <view class="right-icon">
+      <view class="icon">Basket</view>
+    </view>
+     
+  </view>
+
+  <view wx:if="{{search==true}}" class="search-box" style="width:{{left-20}}px;height:{{navBarHeight}}px;margin-top:{{statuHeight+gap}}px;">
+    <view class="search-icon" style="height:{{navBarHeight}}px;width:{{navBarHeight}}px;">
+      <image src="img/search2.png" style="height:50%;width:50%;"></image>
+    </view>
+    <input style="height:100%;width:{{left-10-navBarHeight*2}}px;margin-left:10px;" type="text" placeholder="search in Goods store"></input>
+    <view bindtap="cancle_search" class="search-icon" style="height:{{navBarHeight}}px;width:{{navBarHeight}}px;">
+      <image src="img/cancle.png" style="height:50%;width:50%;"></image>
+    </view>
+  </view>
+  <!-- <view wx:if="{{show_my==true}}" class="clink-my" style="width:100%;height:100%;"></view> -->
+</view>
