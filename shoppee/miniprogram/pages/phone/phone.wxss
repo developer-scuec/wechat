@@ -1,0 +1,67 @@
+/* pages/phone/phone.wxss */
+#page{
+  width: 100%;
+  height: 100%;
+}
+.shops{
+  width: 100%;
+  height: 300rpx;
+  display: inline-flex;
+  background-color: white;
+  border-bottom: 0.5px solid rgb(201, 201, 201);
+}
+.images{
+  height: 100%;
+  width: 40%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-image{
+  width: 260rpx;
+  height: 260rpx;
+}
+.words{
+  height: 100%;
+  width: 60%;
+}
+.shop-info{
+  font-size: 25rpx;
+  margin-top: 20rpx;
+  padding-right: 15rpx;
+}
+.shop-new{
+  font-size: 25rpx;
+}
+.shop-price{
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.shop-run{
+  font-size: 25rpx;
+  margin-top: 10rpx;
+}
+.buttom{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  background-color: white;
+}
+.right,.left{
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview,.next{
+  width: 150rpx;
+  height: 50rpx;
+  background-color: #2962ca;
+  border-radius: 25rpx 25rpx 25rpx 25rpx;
+  text-align: center;
+  color: white;
+  font-size: 25rpx;
+  line-height: 50rpx;
+}

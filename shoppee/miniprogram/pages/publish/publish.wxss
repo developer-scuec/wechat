@@ -1,0 +1,131 @@
+/* pages/publish/publish.wxss */
+page{
+  background-color: white;
+}
+#page{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#scoll-page{
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #9fc948;
+ 
+}
+#title{
+  width: 100%;
+  height: 80rpx;
+  background-color: #f8f7f3;
+  margin-top: 25rpx;
+}
+#detail{
+  width: 100%;
+  height: 300rpx;
+  margin-top: 25rpx;
+  background-color: #f8f7f3;
+}
+#input-img{
+  width: 100%;
+}
+.imgs{
+  width: 100%;
+  height: 100%;
+}
+#addview{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #f8f7f3;
+  margin-left: 15rpx;
+  margin-top: 25rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgView{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #f8f7f3;
+  margin-left: 15rpx;
+  margin-top: 25rpx;
+  float: left;
+  align-items: center;
+  justify-content: center;
+}
+#addImg{
+  width: 100rpx;
+  height: 100rpx;
+}
+.price{
+  margin-top: 25rpx;
+  display: flex;
+}
+#mygoods{
+  margin-top: 25rpx;
+}
+.goods{
+  background-color: #f8f7f3;
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.253);
+}
+.myWord{
+  float: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 35rpx;
+  padding-left:25rpx;
+}
+.next{
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 20rpx;
+}
+.nextImg{
+  width: 50rpx;
+  height: 50rpx;
+}
+#forPay{
+  width: 100%;
+  height: 100rpx;  
+  margin-top: 100rpx;
+
+}
+.payView{
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#wechatPay,#aliPay{
+ width: 90%;
+ height: 70rpx;
+ border: 0.5px solid black;
+ font-size: 35rpx;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center; 
+ border-radius: 5px;
+}
+#aliPay{
+  background-color: white;
+  color: black;
+}
+#wechatPay{
+  background-color: #2962ca;
+  color: white;
+
+}
+.payImg{
+  width: 50rpx;
+  height: 50rpx;
+}
+.payWord{
+   margin-left: 10rpx;
+   font-size: 25rpx;
+}

@@ -1,0 +1,22 @@
+<!--pages/phone/phone.wxml-->
+<scroll-view scroll-y="true" id="page">
+  <navigator class="shops"  wx:for="{{shops}}" url="/pages/detail/detail?id={{item._id}}&&name={{item.name}}&&src={{item.src}}&&price={{item.price}}">
+    <view class="images">
+      <image class="shop-image" src="{{item.src}}"></image>
+    </view>
+    <view class="words">
+      <view class="shop-info">{{item.name}}</view>
+      <view class="shop-new">全新 · 手机</view>
+      <view class="shop-price">￥ {{item.price}}</view>
+      <view class="shop-run">包邮</view>
+    </view>
+  </navigator>
+  <view class="buttom">
+    <view class="right">
+      <view class="preview" bindtap="preview">上一页</view>
+    </view>
+    <view class="left">
+      <view class="next" bindtap="next">下一页</view>
+    </view>
+  </view>
+</scroll-view>

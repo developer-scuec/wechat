@@ -1,0 +1,111 @@
+<!--pages/bag/bag.wxml-->
+
+<page id="page">
+<scroll-view id="scoll-page" scroll-y="true">
+<view  wx:for="{{shops}}">
+  <view class="shopInfo">
+    <view class="shopImgView">
+      <image src="{{item.src}}" id="headImg"></image>
+    </view>
+    <view class="detailInfo">
+      <view class="wordInfo">
+        <view class="shopName">{{item.name}}</view>
+      </view>
+      <view class="countInfo">
+        
+          <view class="shopCount">数量 {{item.num}} </view>
+          <view class="singlePrice">商品价格: {{item.num}} * {{item.price}} ={{item.num*item.price}} RMB</view>
+        
+      </view>
+      <view class="sendDates">
+        <view class="sendword">现在订购， 预计送达日期：</view>
+        <view class="senddate">星期日 2020/03/01 - 免费</view>
+      </view>
+    </view>
+    
+  </view>
+
+  <view class="account">
+      <view class="accountBox">
+        <view class="selectAccount" bindtap="addPay"  data-index="{{index}}">
+          <view class="toAccount">
+            <view class="accountImgView" wx:if="{{item.isAdd==false}}">
+               <image src="/pages/icon/account.png" class="accountImg"></image>
+            </view>
+            <view class="accountImgView" wx:elif="{{item.isAdd==true}}">
+               <image src="/pages/icon/account_selector.png" class="accountImg"></image>
+            </view>
+            <view class="accountWord">
+              <view>添加结算</view>
+              <view>+ RMB {{item.price}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="selectDelete"  bindtap="deletePay"  data-index="{{index}}">
+          <view class="toDelette">
+            <view class="deleteImgView">
+               <image src="/pages/icon/delete.png" class="deleteImg"></image>
+            </view>
+            <view class="deleteWord">
+              <view>移除订单</view>
+              <view>- RMB {{item.price}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+  <view id="shopAddress">
+    <view id="shopAddressWord">送货地址</view>
+    <view id="addressInfo">
+      <view class="addressWord">梁 泽华</view>
+      <view class="addressWord">湖北</view>
+      <view class="addressWord">武汉</view>
+      <view class="addressWord">江岸区</view>
+      <view class="addressWord">中南民族大学</view>
+      <view class="addressWord">430000 中国</view>
+    </view>
+    <view id="changeAddress">
+      <image src="/pages/icon/next.png" id="changeAddressImg"></image>
+    </view>
+  </view>
+  <view id="Terms">
+    <view id="TermsWord">条款与条件</view>
+  </view>
+  
+
+
+  <view id="end">
+    <view class="endWord">通过点击 “支付宝支付” 或 ”微信支付“ ，我同意接受Shoppee 在线商店条款和条件。</view>
+    <view class="endWord">请注意以下内容</view>
+    <view class="endWord">发货和送达日期为 Shoppee 做出的最佳估算时间。就少数订单，由于无法预料的产品短缺或超出我们控制以外的因素，实际时间可能会更长。如有延迟，我们将联系您，您可以选择取消订单及要求全额退款。</view>
+    <view class="endWord">我们网站上的产品和定价信息在公布前已经过核实。但是， 在极少数情形下可能有误。 如果发现定价错误， 我们将通知您，取消您的订单，并对订单全额退款。</view>
+    <view class="annoce">版权所有 @2020 Shoppee Inc. 保留所有权利</view>
+  </view>
+</scroll-view>
+
+<view id="payMethod">
+  <view id="moneyCount">
+    <view id="WordCount">购物袋小计</view>
+    <view id="money">RMB {{total}}</view>
+  </view>
+  <view id="sendForFree"><view id="freeWord">你的购物袋可以免费送货</view></view>
+  <view id="fenqi"><view id="fenqiWord">24期0%费率， 每月仅约{{total/24}}</view></view>
+  <view id="forPay">
+    <view class="payView">
+      <view id="aliPay" bindtap="aliPay">
+        <view id="aliPayImg"><image class="payImg" src="/pages/icon/aliPay.png"></image></view>
+        <view class="payWord">支付宝支付</view>
+      </view>
+      
+    </view>
+    <view class="payView" bindtap="wechatPay">
+      <view id="wechatPay">
+        <view id="wechat"><image class="payImg" src="/pages/icon/wechat.png"></image></view>
+        <view class="payWord">微信支付</view>
+      </view>
+    </view>
+    
+  </view>
+</view>
+</page>

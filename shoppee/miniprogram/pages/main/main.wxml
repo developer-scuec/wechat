@@ -1,0 +1,226 @@
+
+<view id="page">
+<!-- <scroll-view id="scoll-page" scroll-y="true"> -->
+  <view id="head">
+    <view id="search">
+      <image src="/pages/icon/search.png" id="search-icon"></image>
+      <input type="text" placeholder="搜索shoppee" id="search-input"/>
+    </view>
+    <view id="look"> 
+      <view id="sort">
+        <view class="sales">
+          <image src="/pages/icon/fenlei.png" id="sort-icon"></image>
+          <text>浏览</text>
+        </view>
+      </view>
+      <view id="sales">
+        <view class="sales">
+          <image src="/pages/icon/sales.png" id="sales-icon"></image>
+          <text>超值特价</text>
+        </view>
+        
+      </view>
+    </view>
+  </view>
+
+  
+  <view class="ad">
+    <view class="background">
+     <view class="backgroundColor phoneColor"></view>
+    </view>
+    <view class="front">
+      <view class="word phone">
+        <view class="h1">手机 电脑 数码</view>
+        <view class="h2">iphone ipad mac 24期免息.</view>
+        <navigator class="go" url="/pages/phone/phone?classify=phone">查看更多 ></navigator>
+      </view>
+
+      <view id="showOrders" class="show">
+        <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+          <view id="fatheritems">
+            <view id="item" class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/phone.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/computer.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/camera.jpg">
+              </image>
+            </view>
+          </view>  
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+  <view class="ad other">
+    <view class="background">
+     <view class="backgroundColor clothColor"></view>
+    </view>
+    <view class="front">
+      <view class="word cloth">
+        <view class="h1">男装 女装 童装</view>
+        <view class="h2">iphone ipad mac 24期免息.</view>
+        <navigator class="go" url="/pages/phone/phone?classify=men's clothing">查看更多 ></navigator>
+      </view>
+      <view id="showOrders" class="show">
+        <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+          <view id="fatheritems">
+            <view id="item" class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/menCloth.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/girlCloth.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/childCloth.jpg">
+              </image>
+            </view>
+          </view>  
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+  <view class="ad other">
+    <view class="background">
+     <view class="backgroundColor shoesColor"></view>
+    </view>
+    <view class="front">
+      <view class="word shoes">
+        <view class="h1">男鞋 运动 户外</view>
+        <view class="h2">iphone ipad mac 24期免息.</view>
+        <navigator class="go" url="/pages/phone/phone?classify=men's shoes">查看更多 ></navigator>
+      </view>
+
+      <view id="showOrders" class="show">
+        <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+          <view id="fatheritems">
+            <view id="item" class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/menShoes.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/sport.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/outer.jpg">
+              </image>
+            </view>
+          </view>  
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+  <view class="ad other">
+    <view class="background">
+     <view class="backgroundColor bagColor"></view>
+    </view>
+    <view class="front">
+      <view class="word bag">
+        <view class="h1">女鞋 箱包 钟表</view>
+        <view class="h2">iphone ipad mac 24期免息.</view>
+        <navigator class="go" url="/pages/phone/phone?classify=girl's shoes">查看更多 ></navigator>
+      </view>
+
+      <view id="showOrders" class="show">
+        <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+          <view id="fatheritems">
+            <view id="item" class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/girlShoes.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/bag.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/oclok.jpg">
+              </image>
+            </view>
+          </view>  
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="ad other">
+    <view class="background">
+     <view class="backgroundColor lookupColor"></view>
+    </view>
+    <view class="front">
+      <view class="word lookup">
+        <view class="h1">美妆 护理 宠物</view>
+        <view class="h2">iphone ipad mac 24期免息.</view>
+        <navigator class="go" url="/pages/phone/phone?classify=Beauty">查看更多 ></navigator>
+      </view>
+
+      <view id="showOrders" class="show">
+        <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+          <view id="fatheritems">
+            <view id="item" class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/lookup.jpg">
+              </image>
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/huli.jpg">
+              </image>
+         
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/pet.jpg">
+              </image>
+          
+            </view>
+          </view>  
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="ad other">
+    <view class="background">
+     <view class="backgroundColor bookColor"></view>
+    </view>
+    <view class="front">
+      <view class="word book">
+        <view class="h1">图书 文娱 电子书</view>
+        <view class="h2">iphone ipad mac 24期免息.</view>
+        <navigator class="go" url="/pages/phone/phone?classify=book">查看更多 ></navigator>
+      </view>
+
+      <view id="showOrders" class="show">
+        <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+          <view id="fatheritems">
+            <view id="item" class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/book.jpg">
+              </image>
+
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/wenyu.jpg">
+              </image>
+         
+            </view>
+            <view  class="items">
+              <image class="scrollImg" mode="heightFix"  src="cloud://shoppee.7368-shoppee-1301206439/images/Ebook.jpg">
+              </image>
+            </view>
+          </view>  
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <!-- </scroll-view> -->
+
+  
+</view>

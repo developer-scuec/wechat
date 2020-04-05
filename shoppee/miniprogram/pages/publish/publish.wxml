@@ -1,0 +1,49 @@
+<view id="page">
+<scroll-view id="scoll-page" scroll-y="true">
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view id="input-word">
+    <input type="text" id="title" name="title" placeholder=" 请输入标题"></input>
+    <textarea type="textarea" name="detail" placeholder="请输入对物品的描述" id="detail"></textarea>
+  </view>
+  <view id="input-img">
+    <view wx:for="{{tempFilePaths}}" id="imgBlock">
+      <view class="imgView">
+        <image src="{{item}}" class="imgs" mode="aspectFit"></image>
+      </view>
+    </view>
+    <view id="addview"  bindtap="selectImg">
+      <image src="/pages/icon/add.png" id="addImg"></image>
+    </view>
+  </view>
+  <view  class="goods price">
+    <view class="myWord"><input type="text" name="price" placeholder="价格"></input></view>
+    <view class="myWord"><input type="text" name="reprice" placeholder="原价"></input></view>
+  </view>
+  <picker mode="selector" bindchange="bindPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+  <view  class="goods">
+    
+  <view class="myWord">分类</view>
+    <view class="next">{{multiArray[index]}}<image src="/pages/icon/next.png" class="nextImg"></image>
+  </view> 
+  </view>
+  </picker>
+  <view id="forPay">
+    <label for="cancel" class="payView">
+      <view id="aliPay">
+        <view id="aliPayImg"><image class="payImg" src="/pages/icon/cancle.png"></image></view>
+        <view class="payWord">取消发布</view>
+      </view>
+    </label>
+    <label for="confirm" class="payView">
+      <view id="wechatPay">
+        <view id="wechat"><image class="payImg" src="/pages/icon/confirm.png"></image></view>
+        <view class="payWord">确认发布</view>
+      </view>
+    </label>
+    <button id="cancel" form-type="reset" style="display:none;">取消发布</button>
+    <button id="confirm" form-type="submit"  style="display:none;">确认发布</button>
+  </view>
+</form>
+</scroll-view>
+</view>

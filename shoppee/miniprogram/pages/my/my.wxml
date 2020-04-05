@@ -1,0 +1,60 @@
+<!--pages/my/my.wxml-->
+<page id="page">
+<scroll-view id="scoll-page" scroll-y="true">
+  <view id="personInfo">
+    <view id="headImgView">
+      <image src="{{headImg}}" id="headImg"></image>
+    </view>
+    <view id="loginInfo">
+      <button wx:if="{{nickName=='登录 > '}}"  id="loginButton"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">{{nickName}}</button>
+      <view class="wordInfo" wx:if="{{nickName!='登录 > '}}">{{nickName}}</view>
+      <view id="address" class="wordInfo" wx:if="{{nickName!='登录 > '}}">{{otherInfo}}</view>
+    </view>
+    
+  </view>
+  <navigator url="/pages/collect/collect" id="mygoods" class="goods">
+    <view class="myWord">我的收藏</view>
+    <view class="next"><image src="/pages/icon/next.png" class="nextImg"></image></view>
+  </navigator>
+  <navigator url="/pages/record/record"  class="goods">
+    <view class="myWord">购买记录</view>
+    <view class="next"><image src="/pages/icon/next.png" class="nextImg"></image></view>
+  </navigator>
+  <view  class="myOrder" id="myOrder">
+    <view class="myWord">我的订单</view>
+    <navigator url="/pages/orders/orders?orders={{orderString}}" id="lookAll" class="next">查看全部</navigator>
+  </view>
+
+  <view id="showOrders" class="show">
+ 
+    <scroll-view id="showItem" scroll-x="true" bindscroll="scroll">
+      <view id="fatheritems">
+        <view  class="items"  wx:for="{{orders}}">
+          <view class="itemImgView">
+            <image src="{{item.src}}" class="itemImg"></image>
+          </view>
+          <view class="itemInfo">
+            <view class="itemWord">{{item.name}}</view>
+          </view>
+        </view>
+      </view>  
+    </scroll-view>
+  </view>
+  <!-- <navigator url="/pages/receipt/receipt"  class="goods" id="shopVerify">
+    <view class="myWord">购买收据</view>
+    <view class="next"><image src="/pages/icon/next.png" class="nextImg"></image></view>
+  </navigator> -->
+  <navigator url="/pages/address/address"  class="goods">
+    <view class="myWord">送货地址</view>
+    <view class="next"><image src="/pages/icon/next.png" class="nextImg"></image></view>
+  </navigator>
+  <view id="end">
+    <view class="endWord">Shoppee 销售和退款政策</view>
+    <view class="endWord">常见问题（FAQ)</view>
+    <view class="endWord">致谢</view>
+    <view class="endWord">Shoppee隐私政策</view>
+    <view class="endWord">Shoppee 微信小程序与隐私</view>
+    <view class="annoce">版权所有 @2020 Shoppee Inc. 保留所有权利</view>
+  </view>
+</scroll-view>
+</page>

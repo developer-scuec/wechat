@@ -1,0 +1,22 @@
+<!--pages/receipt/receipt.wxml-->
+<view id="pages">
+  <view class="head">
+    <view class="img">Shoppee</view>
+    <view class="word">发票</view>
+  </view>
+  <view class="receipt">
+  <view class="shopid">
+    <view class="shopid_word">OPENID</view>
+    <view class="shopid_id">oyqMC5St2jOrdmhRq2SGSCZ5w0Ng</view>
+  </view>
+  <view class="shopid">
+    <view class="shopid_word">订单号</view>
+    <view class="shopid_id">1583732687741_0.47554397920547187_33590410</view>
+  </view>
+  <view class="payinfo">
+    <view class="payinfo_word">付款信息</view>
+
+  </view>
+  </view>
+  
+</view>

@@ -1,0 +1,119 @@
+/* pages/my/my.wxss */
+#page{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#scoll-page{
+  width: 100%;
+  height: 100%;
+  background-color: #f8f7f3;
+  border-top: 2px solid #9fc948;
+ 
+}
+.shopInfo{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  /* border-top: 0.5px solid rgba(0, 0, 0, 0.253); */
+  /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.253); */
+}
+.shopImgView{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #f8f7f3;
+  margin-left: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30rpx;
+
+}
+#headImg{
+  width: 100rpx;
+  height: 100rpx;
+}
+.detailInfo{
+  width: 80%;
+  height: 100%;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+
+}
+.wordInfo{
+  width: 95%;
+  font-size: 27rpx;
+  margin-top: 30rpx;
+}
+
+.shopAllPrice{
+  float: right;
+
+}
+.countInfo{
+  width: 100%;
+  display: inline-flex;
+  font-size: 25rpx;
+  margin-top: 15rpx;
+}
+
+.singlePrice{
+
+}
+.sendDates{
+  width: 100%;
+  font-size: 25rpx;
+  margin-top: 10rpx;
+  margin-bottom: 50rpx;
+}
+.senddate{
+  margin-top: 10rpx;
+  color: #72716c;
+}
+.account{
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.253);
+  display: flex;
+  justify-content: center;
+}
+.accountBox{
+  width: 90%;
+  height: 100%;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.253);
+  display: inline-flex;
+  
+}
+.selectAccount,.selectDelete{
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.toAccount,.toDelette{
+  width: 90%;
+  height: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+}
+.accountImg{
+  width: 50rpx;
+  height: 50rpx;
+}
+.deleteImg{
+  width: 50rpx;
+  height: 50rpx;
+}
+.accountWord,.deleteWord{
+  margin-left: 25rpx;
+
+}
+

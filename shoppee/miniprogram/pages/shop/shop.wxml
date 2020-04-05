@@ -1,0 +1,64 @@
+<view id="page">
+  <view id="Sale">
+    <view id="toSale">
+      <navigator id="toSaleWord" url="/pages/publish/publish">刊登物品</navigator>
+    </view>
+    <view id="inCome">
+      <view id="monney">￥0.00</view>
+      <view id="day">90天总计</view>
+    </view>
+    <view id="saleNumber">
+      <view id="Saling" class="salesNumber">
+        <view class="number">0</view>
+        <view class="numberWord">在售</view>
+      </view>
+      <view id="Saled" class="salesNumber">
+        <view class="number">0</view>
+        <view class="numberWord">已售出</view>
+      </view>
+      <view id="notSale" class="salesNumber">
+        <view class="number">0</view>
+        <view class="numberWord">未售出</view>
+      </view>
+    </view>
+  </view>
+  <view id="runMethod">
+  <view id="mygoods" class="goods">
+    <view class="myWord">运作方式</view>
+    <view class="next">了解详情 <image src="/pages/icon/next.png" class="nextImg"></image>
+    </view>
+  </view>
+
+  <view class="showShop">
+    <view class="showImg">
+      <image class="img" src="/pages/icon/pick.png"></image>
+    </view>
+    <view class="showWord">
+      <view class="title">刊登只需几分钟.</view>
+      <view class="word">拍摄一些图片并撰写精彩的描述。 我们会帮助您为物品定价， 以促成销售。</view>
+    </view>
+  </view>
+
+  <view class="showShop shop2">
+    <view class="showImg">
+      <image class="img" id="img2" src="/pages/icon/income.png"></image>
+    </view>
+    <view class="showWord">
+      <view class="title">快速、安全的收款.</view>
+      <view class="word">当您的物品售出时， 我们会让您和买家轻松完成付款流程。</view>
+    </view>
+  </view>
+
+  <view class="showShop shop2">
+    <view class="showImg">
+      <image class="img" id="img3" src="/pages/icon/send.png"></image>
+    </view>
+    <view class="showWord">
+      <view class="title">向买家发货.</view>
+      <view class="word">把它装箱， 直接在 Shoppee 上打印标签，然后将它寄出。 就这简单。</view>
+    </view>
+  </view>
+    
+    
+  </view>
+</view>

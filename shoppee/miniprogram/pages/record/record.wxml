@@ -1,0 +1,57 @@
+<!--pages/bag/bag.wxml-->
+
+<page id="page">
+<scroll-view id="scoll-page" scroll-y="true">
+<view  wx:for="{{orders}}">
+  <view class="shopInfo">
+    <view class="shopImgView">
+      <image src="{{item.src}}" id="headImg"></image>
+    </view>
+    <view class="detailInfo">
+      <view class="wordInfo">
+        <view class="shopName">{{item.name}}</view>
+      </view>
+      <view class="countInfo">
+        
+          <view class="singlePrice">商品价格: {{item.price}} RMB</view>
+        
+      </view>
+      <view class="sendDates">
+        <view class="sendword">现在订购， 预计送达日期：</view>
+        <view class="senddate">星期日 2020/03/01 - 免费</view>
+      </view>
+    </view>
+    
+  </view>
+
+  <view class="account">
+      <view class="accountBox">
+        <view class="selectAccount" bindtap="buy"  data-index="{{index}}">
+          <view class="toAccount">
+            <view class="accountImgView">
+               <image src="/pages/icon/account.png" class="accountImg"></image>
+            </view>
+            
+            <view class="accountWord">
+              <view>重新购买</view>
+            
+            </view>
+          </view>
+        </view>
+        <view class="selectDelete"  bindtap="deletePay"  data-index="{{index}}">
+          <view class="toDelette">
+            <view class="deleteImgView">
+               <image src="/pages/icon/delete.png" class="deleteImg"></image>
+            </view>
+            <view class="deleteWord">
+              <view>删除记录</view>
+            
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+
+</scroll-view>
+</page>

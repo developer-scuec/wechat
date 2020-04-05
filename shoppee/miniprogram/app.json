@@ -1,0 +1,59 @@
+{
+  "pages": [
+
+    "pages/main/main",
+    "pages/shop/shop",
+    "pages/bag/bag",
+    "pages/my/my",
+    "pages/publish/publish",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/phone/phone",
+    "pages/collect/collect",
+    "pages/orders/orders",
+    "pages/address/address",
+    "pages/record/record"
+    
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f7f3",
+    "navigationBarTitleText": "Shoppee",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f8f7f3"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#2962ca",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "主页",
+        "iconPath": "pages/icon/main.png",
+        "selectedIconPath": "pages/icon/main_selector.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/icon/my.png",
+        "selectedIconPath": "pages/icon/my_selector.png"
+      },
+      {
+        "pagePath": "pages/bag/bag",
+        "text": "购物袋",
+        "iconPath": "pages/icon/bag.png",
+        "selectedIconPath": "pages/icon/bag_selector.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "出售",
+        "iconPath": "pages/icon/shop.png",
+        "selectedIconPath": "pages/icon/shop_selector.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

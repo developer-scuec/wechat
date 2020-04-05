@@ -1,0 +1,51 @@
+<!--pages/address/address.wxml-->
+
+<view class="page">
+<form bindsubmit="formSubmit">
+  <view class="addressInfo">
+  
+    <view class="word">姓氏</view>
+    <view class="input"><input name="lastName" value="{{address[0].lastName}}" type="text" placeholder-class="phcolor" placeholder="Last name"/></view>
+  </view>
+  <view class="addressInfo">
+    <view class="word">名字</view>
+    <view class="input"><input name="firstName" value="{{address[0].firstName}}" type="text" placeholder-class="phcolor" placeholder="First name"/></view>
+  </view>
+  <view class="addressInfo province">
+    <view class="word">省/市/自治区</view>
+    <view class="input"><input name="province" value="{{address[0].province}}" type="text" placeholder-class="phcolor" placeholder="Province"/></view>
+  </view>
+  <view class="addressInfo">
+    <view class="word">城镇/城市</view>
+    <view class="input"><input name="city" value="{{address[0].city}}" type="text" placeholder-class="phcolor" placeholder="City"/></view>
+  </view>
+  <view class="addressInfo">
+    <view class="word">区</view>
+    <view class="input"><input name="area" value="{{address[0].area}}" type="text" placeholder-class="phcolor" placeholder="Area"/></view>
+  </view>
+  <view class="addressInfo">
+    <view class="word">街道编号/名称</view>
+    <view class="input"><input name="street" value="{{address[0].street}}" type="text" placeholder-class="phcolor" placeholder="Street"/></view>
+  </view>
+  <view class="addressInfo">
+    <view class="word">房间、单位</view>
+    <view class="input"><input name="room" value="{{address[0].room}}" type="text" placeholder-class="phcolor" placeholder="Room"/></view>
+  </view>
+  <view class="addressInfo zipcode">
+    <view class="word">邮政编码</view>
+    <view class="input"><input name="zipCode" value="{{address[0].zipCode}}" type="text" placeholder-class="phcolor" placeholder="Zip code"/></view>
+  </view>
+  <view class="addressInfo phone">
+    <view class="word">联系电话</view>
+    <view class="input"><input name="phone" value="{{address[0].phone}}" type="text" placeholder-class="phcolor" placeholder="Phone"/></view>
+  </view>
+  <label for="button">
+  <view class="submit">存储</view>
+  <button id="button" form-type="submit" style="display:none;">提交</button>
+  </label>
+  <label for="cacle">
+  <view class="cacle">重置</view>
+  <button id="cacle" form-type="reset" style="display:none;">重置</button>
+  </label>
+  </form>
+</view>

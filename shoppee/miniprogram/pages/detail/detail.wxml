@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+
+<view id="page">
+  <view class="show-images">
+    <image class="img" src="{{src}}"></image>
+  </view>
+  <view class="name">{{name}}</view>
+  <view class="price">RMB ￥{{price}}</view>
+  <view class="time">预计送达日期：3月18日 周三 - 3月25日周三</view>
+</view>
+<picker mode="selector" bindchange="bindPickerChange" value="{{multiIndex}}" range="{{multiArray}}">
+  <view  class="nums">
+    
+  <view class="myWord">数量</view>
+    <view class="next">{{multiArray[index]}}<image src="/pages/icon/next.png" class="nextImg"></image>
+  </view> 
+  </view>
+  </picker>
+  <view class="back">
+  <view class="word">
+    <view>接受 7 天内免费无条件退货</view>
+    <view>保障提供方：shoppee.Inc</view>
+  </view>
+  </view>
+  <view class="end buy" bindtap="buy">立即购买</view>
+  <view class="end car" bindtap="addCar">添加至购物车</view>
+  <view class="end add" bindtap="addCollect">添加至收藏记录</view>
